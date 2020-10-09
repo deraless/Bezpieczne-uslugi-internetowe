@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc22b651178d537c4516385f00caf571",
+    "revision": "d6f0975e3a537f7f15c8d4d742051d83",
     "url": "/Bezpieczne-uslugi-internetowe/index.html"
   },
   {
-    "revision": "71840f32558c399eec2d",
+    "revision": "884b3eeaf2ac2831bb0d",
     "url": "/Bezpieczne-uslugi-internetowe/static/css/main.9af926ce.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Bezpieczne-uslugi-internetowe/static/js/2.750ea30a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "71840f32558c399eec2d",
-    "url": "/Bezpieczne-uslugi-internetowe/static/js/main.efacd16e.chunk.js"
+    "revision": "884b3eeaf2ac2831bb0d",
+    "url": "/Bezpieczne-uslugi-internetowe/static/js/main.8e75e5ce.chunk.js"
   },
   {
     "revision": "104fa28d7dab9fd62eb0",
