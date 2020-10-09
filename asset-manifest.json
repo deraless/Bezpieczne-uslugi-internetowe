@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Bezpieczne-uslugi-internetowe/static/css/main.9af926ce.chunk.css",
+    "main.js": "/Bezpieczne-uslugi-internetowe/static/js/main.bc168742.chunk.js",
+    "main.js.map": "/Bezpieczne-uslugi-internetowe/static/js/main.bc168742.chunk.js.map",
+    "runtime-main.js": "/Bezpieczne-uslugi-internetowe/static/js/runtime-main.03a5cda0.js",
+    "runtime-main.js.map": "/Bezpieczne-uslugi-internetowe/static/js/runtime-main.03a5cda0.js.map",
+    "static/js/2.750ea30a.chunk.js": "/Bezpieczne-uslugi-internetowe/static/js/2.750ea30a.chunk.js",
+    "static/js/2.750ea30a.chunk.js.map": "/Bezpieczne-uslugi-internetowe/static/js/2.750ea30a.chunk.js.map",
+    "index.html": "/Bezpieczne-uslugi-internetowe/index.html",
+    "precache-manifest.27355ed667ac138aa54502ea999755ef.js": "/Bezpieczne-uslugi-internetowe/precache-manifest.27355ed667ac138aa54502ea999755ef.js",
+    "service-worker.js": "/Bezpieczne-uslugi-internetowe/service-worker.js",
+    "static/css/main.9af926ce.chunk.css.map": "/Bezpieczne-uslugi-internetowe/static/css/main.9af926ce.chunk.css.map",
+    "static/js/2.750ea30a.chunk.js.LICENSE.txt": "/Bezpieczne-uslugi-internetowe/static/js/2.750ea30a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.03a5cda0.js",
+    "static/js/2.750ea30a.chunk.js",
+    "static/css/main.9af926ce.chunk.css",
+    "static/js/main.bc168742.chunk.js"
+  ]
+}
