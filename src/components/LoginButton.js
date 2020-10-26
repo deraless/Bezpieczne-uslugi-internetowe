@@ -5,7 +5,11 @@ const LoginButton = () => {
     const { loginWithRedirect, isAuthenticated } = useAuth0();
     return (
         !isAuthenticated && (
-            <button onClick={() => loginWithRedirect()}>
+            <button
+                id='loginButton'
+                onClick={() => loginWithRedirect({
+                    redirectUri: 'http://localhost:3000/home'
+                })}>
                 Log in
             </button>)
     )

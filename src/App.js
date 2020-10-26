@@ -1,20 +1,19 @@
 import React from 'react';
 import './App.css';
-import LoginButton from './components/LoginButton'
-import LogoutButton from './components/LogoutButton'
-import Profile from './components/Profile';
 import { useAuth0 } from '@auth0/auth0-react'
+import { Route, BrowserRouter as Router } from 'react-router-dom';
+import LoginPage from './pages/LoginPage'
+import PrivateRoute from './components/PrivateRoute';
+import HomePage from './pages/HomePage';
 
 function App() {
   const { isLoading } = useAuth0();
   if (isLoading) return <div>Loading...</div>
   return (
-    <>
-      <LoginButton />
-      <LogoutButton />
-      <Profile />
-
-    </>
+    <Router>
+      <Route path="/" component={LoginPage} />
+      <PrivateRoute path="/home" component={HomePage} />
+    </Router>
   );
 }
 
