@@ -10,6 +10,7 @@ const Header = (props) => {
     const [open, setOpen] = useState(false)
     const { isAuthenticated, logout, loginWithRedirect } = useAuth0()
     const { history } = props;
+
     const handleDrawerOpen = () => {
         setOpen(true)
     }
@@ -20,9 +21,9 @@ const Header = (props) => {
     const handleRedirect = (text) => {
         if (text === 'Home')
             history.push(`/home`)
-        if (text === 'Calculator')
+        else if (text === 'Calculator')
             history.push(`/calc`)
-        if (text === 'Example')
+        else if (text === 'Example')
             history.push(`/example`)
     }
 
