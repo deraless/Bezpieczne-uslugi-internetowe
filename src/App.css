@@ -10,12 +10,30 @@ body {
 }
 
 button {
-  margin: 2rem 0;
   padding: 1rem 2rem;
-  width: 120px;
+  width: 5%;
   cursor: pointer;
 }
 
 img {
-  width: 120px;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.result {
+  margin-top: 100px;
+  height: 60px;
+  background-color: rgb(200, 200, 200);
+  width: 100%;
+}
+
+.result p {
+  padding: 1rem;
+  font-size: 30px;
+  margin: 5px;
+}
+
+.calculator-body {
+  max-width: 272px;
+  margin: auto;
 }

@@ -1,66 +1,66 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ResultComponent from '../components/ResultComponent';
 import KeyPadComponent from '../components/KeyPadComponent';
 
-class Calculator extends Component {
-    constructor(){
+class CalcPage extends Component {
+    constructor() {
         super();
 
         this.state = {
             result: ""
         }
     }
-	
-	onClick = button => {
-		 
-	if(this.state.result.length > 13){
 
-        if(button === "="){
-            this.calculate()
-        }
+    onClick = button => {
 
-        else if(button === "C"){
-            this.reset()
-        }
-        else if(button === "CE"){
-            this.backspace()
-        }
+        if (this.state.result.length > 13) {
 
-        else {
-            this.setState({
-                result: this.state.result
-            })
-        }
-	}
-	
-	else {
-		
-		if(button === "="){
-            this.calculate()
-        }
+            if (button === "=") {
+                this.calculate()
+            }
 
-        else if(button === "C"){
-            this.reset()
-        }
-        else if(button === "CE"){
-            this.backspace()
+            else if (button === "C") {
+                this.reset()
+            }
+            else if (button === "CE") {
+                this.backspace()
+            }
+
+            else {
+                this.setState({
+                    result: this.state.result
+                })
+            }
         }
 
         else {
-            this.setState({
-                result: this.state.result + button
-            })
+
+            if (button === "=") {
+                this.calculate()
+            }
+
+            else if (button === "C") {
+                this.reset()
+            }
+            else if (button === "CE") {
+                this.backspace()
+            }
+
+            else {
+                this.setState({
+                    result: this.state.result + button
+                })
+            }
+
         }
-		
-	}
-		
+
     };
 
 
     calculate = () => {
         var checkResult = ''
-        if(this.state.result.includes('--')){
-            checkResult = this.state.result.replace('--','+')
+        if (this.state.result.includes('--')) {
+            checkResult = this.state.result.replace('--', '+')
         }
 
         else {
@@ -70,7 +70,7 @@ class Calculator extends Component {
         try {
             this.setState({
                 // eslint-disable-next-line
-                result: (eval(checkResult) || "" ) + ""
+                result: (eval(checkResult) || "") + ""
             })
         } catch (e) {
             this.setState({
@@ -96,13 +96,13 @@ class Calculator extends Component {
         return (
             <div>
                 <div className="calculator-body">
-                    <ResultComponent result={this.state.result}/>
-                    <KeyPadComponent onClick={this.onClick}/>
+                    <ResultComponent result={this.state.result} />
+                    <KeyPadComponent onClick={this.onClick} />
                 </div>
             </div>
         );
     }
 }
 
-export default Calculator;
+export default CalcPage;
 
