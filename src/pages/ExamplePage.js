@@ -6,7 +6,7 @@ const ExamplePage = () => {
 
     return (
         <>
-            <span>EXAMPLE PAGE</span>
+
         </>
     )
 }
