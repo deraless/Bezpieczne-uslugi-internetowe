@@ -11,7 +11,7 @@ const LoginPage = (path) => {
 
     return (
         <>
-            <span>Login page</span>
+
         </>
     )
 }

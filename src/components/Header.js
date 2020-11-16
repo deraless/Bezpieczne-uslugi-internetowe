@@ -10,6 +10,7 @@ const Header = (props) => {
     const [open, setOpen] = useState(false)
     const { isAuthenticated, logout, loginWithRedirect } = useAuth0()
     const { history } = props;
+
     const handleDrawerOpen = () => {
         setOpen(true)
     }
@@ -18,12 +19,18 @@ const Header = (props) => {
     }
 
     const handleRedirect = (text) => {
-        if (text === 'Home')
+        if (text === 'Home') {
             history.push(`/home`)
-        if (text === 'Calculator')
+            handleDrawerClose()
+        }
+        else if (text === 'Calculator') {
             history.push(`/calc`)
-        if (text === 'Example')
+            handleDrawerClose()
+        }
+        else if (text === 'Example') {
             history.push(`/example`)
+            handleDrawerClose()
+        }
     }
 
     return (
@@ -34,7 +41,7 @@ const Header = (props) => {
                         <Menu />
                     </IconButton>
                     <Typography variant='h6' style={{ flexGrow: 1 }} >
-                        Bezpieczne uslugi internetowe
+                        Secure web services
                     </Typography>
                     {isAuthenticated ?
                         <Button
@@ -56,7 +63,6 @@ const Header = (props) => {
                     anchor="left"
                     open={open}
                     onClose={() => setOpen(false)}>
-                    <h3>this is a drawer</h3>
                     <Divider />
                     <List>
                         {['Home', 'Calculator', 'Example', 'Drafts'].map((text, index) => (
