@@ -8,7 +8,7 @@ const LoginButton = () => {
             <button
                 id='loginButton'
                 onClick={() => loginWithRedirect({
-                    redirectUri: 'http://localhost:3000/home'
+                    redirectUri: 'https://buiproject.name/home'
                 })}>
                 Log in
             </button>)

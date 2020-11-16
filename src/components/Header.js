@@ -45,13 +45,13 @@ const Header = (props) => {
                     </Typography>
                     {isAuthenticated ?
                         <Button
-                            onClick={() => logout({ returnTo: 'http://localhost:3000/' })}
+                            onClick={() => logout({ returnTo: 'https://buiproject.name/' })}
                             color='inherit'>
                             Logout
                     </Button>
                         :
                         <Button
-                            onClick={() => loginWithRedirect({ redirectUri: 'http://localhost:3000/home' })}
+                            onClick={() => loginWithRedirect({ redirectUri: 'https://buiproject.name/home' })}
                             color='inherit'>
                             Login
                     </Button>

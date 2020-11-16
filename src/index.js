@@ -12,7 +12,7 @@ ReactDOM.render(
   <Auth0Provider
     domain={domain}
     clientId={clientId}
-    redirectUri={'http://localhost:3000/home'}>
+    redirectUri={'https://buiproject.name/home'}>
     <App />
   </Auth0Provider>,
   document.getElementById('root')
